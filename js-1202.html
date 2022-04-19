@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Javascript Online Quiz</h1>
+    <p class="score"></p>
+    <p class="pass" hidden>Congratulation!!! You passed the Quiz</p>
+    <p class="fail" hidden>Ezzzzzzzzzzz, you failed!!! Reload to try again</p>
+
+    <div class="quiz">
+      <p class="question-index">
+        <span class="question-number"></span>
+        <span class="question"></span>
+      </p>
+
+      <ul class="answer-list">
+        <span class="multi-answer"><em>(Multi answer)</em></span>
+        <li>
+          <input type="radio" id="a" class="answer" name="answer">
+          <span>a. <label for="a" id="a_text">Answer</label></span>
+        </li>
+
+        <li>
+          <input type="radio" id="b" class="answer" name="answer">
+          <span>b. <label for="b" id="b_text">Answer</label></span>
+        </li>
+
+        <li>
+          <input type="radio" id="c" class="answer" name="answer">
+          <span>c. <label for="c" id="c_text">Answer</label></span>
+        </li>
+
+        <li>
+          <input type="radio" id="d" class="answer" name="answer">
+          <span>d. <label for="d" id="d_text">Answer</label></span>
+        </li>
+
+        <p class="review review-correct"><i class="fa-solid fa-circle-check"></i> Correct Answer</p>
+        <p class="review review-incorrect"><i class="fa-solid fa-circle-xmark"></i> Incorrect Answer</p>
+      </ul>
+    </div>
+
+
+    <div class="button-group">
+      <button class="btn pre-btn">Previous Question</button>
+      <button class="btn next-btn">Next Question</button>
+      <button class="btn submit-btn" hidden>Submit your answer</button>
+    </div>
+
+    <p class="current-question"></p>
+
+  </div>
+
+
+
+  <script src="/main.js" type="module"></script>
+</body>
+
+</html>
